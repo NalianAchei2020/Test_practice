@@ -1,5 +1,6 @@
 const stringLength = require('./string');
 const reverseString = require('./task3');
+const caculator = require('./caculator');
 
 test('Test if string is less 1', () => {
   expect(() => stringLength('')).toThrow(
@@ -21,3 +22,5 @@ test('Test string length: Failing', () => {
 test('Reverse String', () => {
   expect(reverseString('Hello')).toBe('olleH');
 });
+
+//test for calculator class
