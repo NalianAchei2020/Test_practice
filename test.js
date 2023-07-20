@@ -24,3 +24,24 @@ test('Reverse String', () => {
 });
 
 //test for calculator class
+describe('calculator', () => {
+  test('add method returns the sum of num1 and num2', () => {
+    const calculator = new caculator(10, 5);
+    expect(calculator.add()).toBe(15);
+  });
+
+  test('Substract method returns the difference between num1 and num2', () => {
+    const calculator = new caculator(10, 5);
+    expect(calculator.substract()).toBe(5);
+  });
+
+  test('Divide method returns the quotient of num1 and num2', () => {
+    const calculator = new caculator(10, 5);
+    expect(calculator.divide()).toBe(2);
+  });
+
+  test('Multiply method returns the product of num1 and num2', () => {
+    const calculator = new caculator(10, 5);
+    expect(calculator.multiply()).toBe(50);
+  });
+});

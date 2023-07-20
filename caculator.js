@@ -1,4 +1,4 @@
-export class caculator {
+class caculator {
   constructor(num1, num2) {
     this.num1 = num1;
     this.num2 = num2;
@@ -22,3 +22,5 @@ export class caculator {
 
 const calculate = new caculator(8, 4);
 console.log(calculate.add());
+
+module.exports = caculator;
