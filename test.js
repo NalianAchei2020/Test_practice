@@ -1,12 +1,14 @@
 const stringLength = require('./string');
 
 test('Test if string is less 1', () => {
-  expect(stringLength('')).toThrow('String must be at least 1 character long');
+  expect(() => stringLength('')).toThrow(
+    new Error('String must be at least 1 character long')
+  );
 });
 
 test('Test if string is greater 10', () => {
-  expect(stringLength('Hello, world!')).toThrow(
-    'String cannot be longer than 10 characters'
+  expect(() => stringLength('Hello, world!')).toThrow(
+    new Error('String cannot be longer than 10 characters')
   );
 });
 
